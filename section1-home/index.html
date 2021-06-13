@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- icons : unicons, xeicon -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+<!-- js -->
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./js/script.js"></script>
+<title>responsive portfolio ver2</title>
+</head>
+<body>
+
+    <!-- ====================================== header ====================================== -->
+    <header class="header" id="header">
+        <div class="header-inner flex">
+            <a href="#" id="logo">
+                박한성
+            </a>
+            <div class="nav__container">
+                <ul class="nav__list flex">
+                    <li class="nav__item">
+                        <a href="#" data-link="#home" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" data-link="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i>About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" data-link="#skills" class="nav__link">
+                            <i class="uil uil-file nav__icon"></i>
+                            Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" data-link="#services" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i>
+                            Services
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" data-link="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>
+                            Portfolio
+                        </a>
+                    </li>
+                    <i class="uil uil-times nav__close" id="navClose"></i>
+                </ul>
+            </div>
+            <div class="nav__btns flex">
+                <i class="uil uil-sun change-theme" id="buttonLight"></i>
+                <i class="uil uil-moon change-theme" id="buttonDark"></i>
+                <i class="uil uil-apps" id="navToggle"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- ====================================== Home ====================================== -->
+    <section class="home inner" id="home">
+        <div class="home__social">
+            <a href="https://www.facebook.com" target="_blank" class="social__anchor">
+                <i class="uil uil-facebook-f social__icon"></i>
+            </a>
+            <a href="https://blog.naver.com/hs88610" target="_blank" class="social__anchor">
+                <i class="xi-naver-square xi-2x social__icon"></i>
+            </a>
+            <a href="https://github.com/parkhanseong" target="_blank" class="social__anchor">
+                <i class="uil uil-github-alt social__icon"></i>
+            </a>
+        </div>
+        <div class="home__intro">
+            <h1 class="home__title">안녕하세요, <br>박한성입니다</h1>
+            <h2 class="home__subtitle">웹 퍼블리셔</h2>
+            <p class="home__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta delectus asperiores cupiditate voluptatibus non aperiam exercitationem sapiente, sunt ut eaque atque ipsam praesentium a ullam itaque excepturi. A, ipsa at!</p>
+            <a href="#" class="button">
+                Contact Me 
+                <i class="uil uil-message"></i>
+            </a>
+        </div>
+        <div class="home__img">
+            <div class="home__profile">
+                <img src="./img/profile-remove-bg.png" alt="">
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

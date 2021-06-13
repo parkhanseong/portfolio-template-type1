@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- icons : unicons, xeicon -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+<!-- js -->
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./js/script.js"></script>
+<title>responsive portfolio ver2</title>
+</head>
+<body>
+
+    <!-- ====================================== header ====================================== -->
+    <header class="header" id="header">
+        <div class="header-inner flex">
+            <a href="#" id="logo">
+                박한성
+            </a>
+            <div class="nav__container">
+                <ul class="nav__list flex">
+                    <li class="nav__item">
+                        <a href="#" data-link="#home" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" data-link="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i>About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" data-link="#skills" class="nav__link">
+                            <i class="uil uil-file nav__icon"></i>
+                            Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" data-link="#services" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i>
+                            Services
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" data-link="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>
+                            Portfolio
+                        </a>
+                    </li>
+                    <i class="uil uil-times nav__close" id="navClose"></i>
+                </ul>
+            </div>
+            <div class="nav__btns flex">
+                <i class="uil uil-sun change-theme" id="buttonLight"></i>
+                <i class="uil uil-moon change-theme" id="buttonDark"></i>
+                <i class="uil uil-apps" id="navToggle"></i>
+            </div>
+        </div>
+    </header>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- ====================================== Portfolio ====================================== -->
+    <section class="portfolio inner" id="portfolio">
+        <div class="section__title--wrap">
+            <h1 class="section__title">Portfolio</h1>
+            <h3 class="section__subtitle">What i offer</h3>
+        </div>
+        <div class="custom__slider">
+            <div>
+                <div class="slider__content">
+                    <div class="slider__img">
+                        <img src="./img/portfolio1.jpg" alt="">
+                    </div>
+                    <div class="slider__desc">
+                        <h1>클론 코딩 사이트</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <div class="slider__buttons">
+                            <a href="https://www.github.com" class="button slick__button" target="_blank">
+                                View Code
+                                <i class="uil uil-arrow-right"></i>
+                            </a>
+                            <a href="https://www.github.com" class="button slick__button" target="_blank">
+                                View Site
+                                <i class="uil uil-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="slider__content">
+                    <div class="slider__img">
+                        <img src="./img/portfolio2.jpg" alt="">
+                    </div>
+                    <div class="slider__desc">
+                        <h1>클론 코딩 사이트</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <div class="slider__buttons">
+                            <a href="https://www.github.com" class="button slick__button" target="_blank">
+                                View Code
+                                <i class="uil uil-arrow-right"></i>
+                            </a>
+                            <a href="https://www.github.com" class="button slick__button" target="_blank">
+                                View Site
+                                <i class="uil uil-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="slider__content">
+                    <div class="slider__img">
+                        <img src="./img/portfolio3.jpg" alt="">
+                    </div>
+                    <div class="slider__desc">
+                        <h1>클론 코딩 사이트</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <div class="slider__buttons">
+                            <a href="https://www.github.com" class="button slick__button" target="_blank">
+                                View Code
+                                <i class="uil uil-arrow-right"></i>
+                            </a>
+                            <a href="https://www.github.com" class="button slick__button" target="_blank">
+                                View Site
+                                <i class="uil uil-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
