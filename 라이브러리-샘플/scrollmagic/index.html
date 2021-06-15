@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>scroll magic</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header {
+        height: 300vh;
+        background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    }
+    section {
+        height: 100vh;
+    }
+    .logo-image {
+        width: 50px;
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        transform: translate(-150%);
+    }
+    .leftTitle {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+    }
+    .rightTitle {
+        position: fixed;
+        right: 1rem;
+        top: 1rem;
+    }
+    .center {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .greeting {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+    .active {
+        background: red;
+    }
+    .animation {
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+    .paper-plane {
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+    
+</style>
+</head>
+<body>
+
+
+<header>
+    <h2 class="leftTitle">Web portfolio</h2>
+    <img src="./img/alpaca_coding.png" alt="" class="logo-image">
+    <h2 class="rightTitle">alpaca@gmail.com</h2>
+    <img src="./img/paper.png" alt="" class="center">
+    <h1 class="greeting">안녕하세요 <br>
+    박한성입니다</h1>
+</header>
+<section class="animation">
+    
+</section>
+<section>
+    <h1>두번째 섹션</h1>
+</section>
+<section>
+    <h1>두번째 섹션</h1>
+</section>
+<section>
+    <h1>두번째 섹션</h1>
+</section>
+<section>
+    <h1>두번째 섹션</h1>
+</section>
+<footer>
+    <h1>welcome</h1>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
