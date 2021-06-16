@@ -39,8 +39,8 @@ $(function(){
         name: "box"
     })
 
-    var background = TweenMax.to('.font', 1, {
-        x: -800, 
+    var font = TweenMax.to('.font', 1, {
+        x: -1300, 
         // autoAlpha: 0,
         color: "gold"
     })
@@ -49,7 +49,22 @@ $(function(){
         triggerElement: ".second",
         triggerHook: 0,    
         offset: 0,      
-        duration: "100%"     
+        duration: "50%"     
+    })
+    .setTween(font)
+    .addTo(controller)
+    .addIndicators({
+        name: "폰트"
+    })
+
+    var background = TweenMax.to('.third', 1, {
+        backgroundImage: "linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%)"
+    })
+    var scene3 = new ScrollMagic.Scene({
+        triggerElement: ".third",
+        triggerHook: 0,    
+        offset: 0,      
+        duration: "50%"     
     })
     .setTween(background)
     .addTo(controller)
