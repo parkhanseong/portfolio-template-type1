@@ -1,0 +1,173 @@
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+/* layouts (공공재) */
+.l_wrapper {
+    background: beige;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+.l_wrapper:after {
+    content: '';
+    display: table;
+}
+.l_row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px -20px -10px;
+}
+
+.l_col {
+    box-sizing: border-box;
+    width: 33.3333%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+/* float 버전 */
+/* .l_row {
+	overflow: hidden;
+	margin: 0 -20px;
+}
+.l_col {
+    float: left;
+    box_sizing: border_box;
+    padding: 0 20px;
+} */
+
+.l_col_12_12 {
+    width: 100%;
+}
+.l_col_11_12 {
+    width: 91.66666667%;
+}
+.l_col_10_12 {
+    width: 83.33333333%;
+}
+.l_col_9_12 {
+    width: 75%;
+}
+.l_col_8_12 {
+    width: 66.66666667%;
+}
+.l_col_7_12 {
+    width: 58.33333333%;
+}
+.l_col_6_12 {
+    width: 50%;
+}
+.l_col_5_12 {
+    width: 41.66666667%;
+}
+.l_col_4_12 {
+    width: 33.33333333%;
+}
+.l_col_3_12 {
+    width: 25%;
+}
+.l_col_2_12 {
+    width: 16.66666667%;
+}
+.l_col_1_12 {
+    width: 8.33333333%;
+}
+
+/* - dash는 하위 개념을 나타낸다 */
+/* _(underbar)는 연관된 하나의 개념이다 */
+.l_col_half {
+    width: 50%;
+}
+
+/* component */
+.animal {
+    background: dodgerblue;
+    height: 100%;
+}
+.animal img {
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .l_col_tablet_12_12 {
+        width: 100%;
+    }
+    .l_col_tablet_11_12 {
+        width: 91.66666667%;
+    }
+    .l_col_tablet_10_12 {
+        width: 83.33333333%;
+    }
+    .l_col_tablet_9_12 {
+        width: 75%;
+    }
+    .l_col_tablet_8_12 {
+        width: 66.66666667%;
+    }
+    .l_col_tablet_7_12 {
+        width: 58.33333333%;
+    }
+    .l_col_tablet_6_12 {
+        width: 50%;
+    }
+    .l_col_tablet_5_12 {
+        width: 41.66666667%;
+    }
+    .l_col_tablet_4_12 {
+        width: 33.33333333%;
+    }
+    .l_col_tablet_3_12 {
+        width: 25%;
+    }
+    .l_col_tablet_2_12 {
+        width: 16.66666667%;
+    }
+    .l_col_tablet_1_12 {
+        width: 8.33333333%;
+    }
+}
+
+@media (max-width: 568px) {
+    .l_col_mobile_12_12 {
+        width: 100%;
+    }
+    .l_col_mobile_11_12 {
+        width: 91.66666667%;
+    }
+    .l_col_mobile_10_12 {
+        width: 83.33333333%;
+    }
+    .l_col_mobile_9_12 {
+        width: 75%;
+    }
+    .l_col_mobile_8_12 {
+        width: 66.66666667%;
+    }
+    .l_col_mobile_7_12 {
+        width: 58.33333333%;
+    }
+    .l_col_mobile_6_12 {
+        width: 50%;
+    }
+    .l_col_mobile_5_12 {
+        width: 41.66666667%;
+    }
+    .l_col_mobile_4_12 {
+        width: 33.33333333%;
+    }
+    .l_col_mobile_3_12 {
+        width: 25%;
+    }
+    .l_col_mobile_2_12 {
+        width: 16.66666667%;
+    }
+    .l_col_mobile_1_12 {
+        width: 8.33333333%;
+    }
+}
