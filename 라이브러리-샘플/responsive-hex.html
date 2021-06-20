@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+    육각형
+</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .wrap {
+        width: 80%;
+        margin: 100px auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hex {
+        width: 25%;
+        margin-bottom: 1.8%;
+        position: relative;
+        visibility: hidden;
+    }
+    .hex:nth-of-type(7n+5) {
+        margin-left: 12.5%;
+    }
+    .hex::after {
+        content: '';
+        display: block;
+        padding-bottom: 80%;
+    }
+    .hex-inner {
+        position: absolute;
+        width: 99%;
+        padding-bottom: 114.6%;
+        overflow: hidden;
+        visibility: hidden;
+        transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+    }
+    .hex-inner * {
+        position: absolute;
+        visibility: visible;
+    }
+    .content {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+        background: #02b4cd80;
+        justify-content: center;
+        align-items: center;
+    }
+    .content p {
+        font-style: 3vw;
+        text-align: center;
+        color: #fff;
+    }
+    .first {
+        background: url(https://cdn.pixabay.com/photo/2014/09/07/21/52/city-438393_1280.jpg);
+    }
+    .second {
+        background: url(https://cdn.pixabay.com/photo/2014/09/07/21/52/city-438393_1280.jpg);
+    }
+    .third {
+        background: url(https://cdn.pixabay.com/photo/2014/09/07/21/52/city-438393_1280.jpg);
+    }
+    .fourth {
+        background: url(https://cdn.pixabay.com/photo/2014/09/07/21/52/city-438393_1280.jpg);
+    }
+    .fifth {
+        background: url(https://cdn.pixabay.com/photo/2014/09/07/21/52/city-438393_1280.jpg);
+    }
+    .sixth {
+        background: url(https://cdn.pixabay.com/photo/2014/09/07/21/52/city-438393_1280.jpg);
+    }
+    .seventh {
+        background: url(https://cdn.pixabay.com/photo/2014/09/07/21/52/city-438393_1280.jpg);
+    }
+</style>
+<body>
+
+<div class="wrap">
+    <div class="hex">
+        <div class="hex-inner">
+            <div class="content first">
+                <p>Hex1</p>
+            </div>
+        </div>
+    </div>
+    <div class="hex">
+        <div class="hex-inner">
+            <div class="content second">
+                <p>Hex1</p>
+            </div>
+        </div>
+    </div>
+    <div class="hex">
+        <div class="hex-inner">
+            <div class="content third">
+                <p>Hex1</p>
+            </div>
+        </div>
+    </div>
+    <div class="hex">
+        <div class="hex-inner">
+            <div class="content fourth">
+                <p>Hex1</p>
+            </div>
+        </div>
+    </div>
+    <div class="hex">
+        <div class="hex-inner">
+            <div class="content fifth">
+                <p>Hex1</p>
+            </div>
+        </div>
+    </div>
+    <div class="hex">
+        <div class="hex-inner">
+            <div class="content sixth">
+                <p>Hex1</p>
+            </div>
+        </div>
+    </div>
+    <div class="hex">
+        <div class="hex-inner">
+            <div class="content seventh">
+                <p>Hex1</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
