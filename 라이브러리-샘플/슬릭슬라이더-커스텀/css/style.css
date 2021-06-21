@@ -21,8 +21,6 @@ section {
 .slick-list { 
     padding:45px 60px !important;
     margin-left:30px !important;
-    /* background: skyblue; */
-    /* height: 100%; */
 }
 
 .slick-slide {
@@ -41,7 +39,6 @@ section {
 }
 .slider__img img {
     border-radius: .5rem;
-    /* border: 3px solid red; */
 }
 .slider__content--desc {
     display: none;
