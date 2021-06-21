@@ -17,12 +17,12 @@ section {
 }
 /* ============= slider__custom ============== */
 .slider__custom {
-    /* max-width: 660px; */
-    /* margin: 0 auto; */
 }
 .slick-list { 
     padding:45px 60px !important;
     margin-left:30px !important;
+    /* background: skyblue; */
+    /* height: 100%; */
 }
 
 .slick-slide {
@@ -33,37 +33,18 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 200px;
     padding: 1rem;
 }
+
 .slider__img {
-    /* position: relative; */
+    position: relative;
 }
 .slider__img img {
-    width: 350px;
     border-radius: .5rem;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
-.slider__img h2 {
-    /* position: absolute;
-    bottom: 0;
-    left: 0; */
+.slider__content--desc {
     display: none;
-}
-
-.slider__view-button {
-    text-decoration: none;
-    color: inherit;
-    background: #02343F;
-    width: 100px;
-    height: 30px;
-    display: inline-block;
-    text-align: center;
-    line-height: 30px;
-    border-radius: .7rem;
-    color: #F0EDCC;
-    padding-top: 2px;
-    margin-top: .5rem;
 }
 
 .slick-center {
@@ -81,13 +62,42 @@ section {
 .slider__desc {
     padding: 1rem;
 }
-.slick-center .slider__desc--title {
+.slick-center .slider__content--desc {
     position: absolute;
+    width: 100%;
+    left: -2rem;
     bottom: -1rem;
-    left: -1rem;
     display: block;
-    margin-bottom: .5rem;
+}
+
+.slick-center .slider__desc--title {
     color: #fff;
+}
+.slick-center .slider__icons {
+    margin: .5rem 0;
+    color: #fff;
+}
+.slick-center .slider__icons img {
+    display: inline-block;
+    margin-right: .5rem;
+}
+.img__html {
+    width: 25px;
+}
+.img__photoshop {
+    width: 20px;
+}
+.slick-center .slider__view-button {
+    text-decoration: none;
+    color: inherit;
+    background: #02343F;
+    border-radius: .7rem;
+    color: #F0EDCC;
+    margin-top: .5rem;
+    padding: 1rem;
+    text-align: center;
+    width: 150px;
+    display: inline-block;
 }
 
 /* ============= arrow ============== */
@@ -102,7 +112,6 @@ section {
     height: 50px;
     background: rgba(0,0,0,.2);
     border: none;
-    /* cursor: pointer; */
 }
 .slick-prev {
     left: 0;
@@ -145,7 +154,4 @@ section {
     border-radius: 50%;
     margin-right: .5rem;
     border: none;
-}
-.slick-dots .slick-active button {
-    background: skyblue
 }
