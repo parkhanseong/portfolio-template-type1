@@ -171,9 +171,13 @@ button {
 }
 .logo__js {
     width: 83px;
+    margin-right: -1rem;
 }
 .logo__jquery {
     width: 100px;
+}
+.logo__github {
+    width: 60px;
 }
 
 /* ========================= header ========================= */
