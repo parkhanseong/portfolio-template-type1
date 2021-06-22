@@ -1,6 +1,20 @@
 'use strict';
 
 $(function(){
+
+    
+    /* ================= 안내 모달 start ===================== */
+    $('.notice-modal__close').click(function(){
+        $('#notice').hide();
+    })
+    $('#notice').click(function(e){
+        if(e.target === e.currentTarget){
+            $(this).hide();
+        }
+    })
+    /* ================= 안내 모달 end ===================== */
+
+
     /* ================= change theme ===================== */
     $('#buttonDark').click(function(){
         $(this).hide();
