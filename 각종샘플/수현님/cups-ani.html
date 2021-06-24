@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>grid basic</title>
+<style>
+* {
+    /* margin: 0; */
+}
+
+.cups {
+  display: inline-block;
+  width: 100px;
+  /* height: 61px; */
+  height: 100px;
+  position: relative;
+  font-size: 20px;
+  cursor: pointer;
+  padding: .8em 1em;
+  border: 3px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(black, .2);
+  background: lighten(#f0f4c3, 10%);
+  transform: translate3d(0, 0, 0);
+}
+
+.wave {
+  opacity: .4;
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  background: #0af;
+  width: 300px;
+  height: 300px;
+  margin-left: -150px;
+  margin-bottom: -301px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  
+  
+  transition-delay: 3s;
+  transition-duration: 3s;
+  transition-property: margin-bottom;
+  transition-timing-function: ease;
+}
+
+.wave.active {
+  margin-bottom: -250px;
+  animation: rotate 2000ms infinite linear;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+</style>
+</head>
+<body>
+수현님 물컵
+    <div class="cups">
+        <h1>70%</h1>
+        <span class="wave"></span>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+
+        $('.wave').addClass('active');
+
+    </script>
+
+</body>
+</html>
