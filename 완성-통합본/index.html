@@ -10,24 +10,31 @@
 <meta name="keywords" content="웹퍼블리셔, 포트폴리오, 박한성, 대구,"/><!-- 키워드 -->
 <meta name="author" content="박한성"><!-- 작성자 -->
 <meta name="robots" content="index"> <!-- 웹 페이지 검색 기본 설정 -->
-
+<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
 <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
 <link rel="stylesheet" href="./css/style.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+<!-- <script src="css/plugin/slick.css"></script> -->
+<link rel="stylesheet" href="css/plugin/slick.css">
 <!-- icons : unicons, xeicon -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 <!-- js -->
 <!-- jQuery CDN -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./js/plugin/jquery-3.6.0.min.js"></script>
+<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+<script src="./js/plugin/slick.min.js"></script>
 <script src="./js/script.js"></script>
 <title>responsive portfolio ver2</title>
 </head>
 <body>
 
+    <!-- ====================================== skip ====================================== -->
+    <a id="skip" href="#about" tabindex="1">본문 바로가기</a>
+
     <!-- ======================== 클론 코딩 안내 ======================== -->
-    <div class="notice" id="notice">
+    <!-- <div class="notice" id="notice">
         <div class="modal">
             <i class="uil uil-times notice-modal__close"></i>
             <p>
@@ -51,7 +58,7 @@
                 </a>
             </p>
         </div>
-    </div>
+    </div> -->
 
     <!-- ====================================== header ====================================== -->
     <header class="header" id="header">
@@ -130,7 +137,7 @@
     </section>
 
     <!-- ====================================== About ====================================== -->
-    <section class="about inner" id="about">
+    <section class="about inner" id="about" tabindex="2">
         <div class="section__title--wrap">
             <h1 class="section__title">About Me</h1>
             <h3 class="section__subtitle">My introduction</h3>
